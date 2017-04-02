@@ -1,5 +1,7 @@
 from chatterBotApi.python.chatterbotapi import ChatterBotFactory, ChatterBotType
 from gizoogleTranslateApi.GizoogleTranslator import GizoogleTranslator
+from flask import Flask, request
+from pymessenger.pymessenger.bot import Bot
 factory = ChatterBotFactory()
 
 #bot1 = factory.create(ChatterBotType.CLEVERBOT)
