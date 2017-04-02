@@ -1,6 +1,6 @@
 {
     "appSecret": "",
     "pageAccessToken": "",
-    "validationToken": "",
-    "serverURL": ""
+    "validationToken": "make_me_an_offer_i_can_not_refuse",
+    "serverURL": "https://gangsterbot.azurewebsites.net/FacebookMessengerBot"
 }
