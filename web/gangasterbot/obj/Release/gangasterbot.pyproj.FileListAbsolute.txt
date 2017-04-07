@@ -1,0 +1,9 @@
+c:\users\vipaggar\documents\visual studio 2015\Projects\gangasterbot\gangasterbot\bin\Microsoft.PythonTools.WebRole.dll
+c:\users\vipaggar\documents\visual studio 2015\Projects\gangasterbot\gangasterbot\bin\AzureSetup.cfg
+c:\users\vipaggar\documents\visual studio 2015\Projects\gangasterbot\gangasterbot\bin\Microsoft.PythonTools.AzureSetup.exe
+c:\users\vipaggar\documents\visual studio 2015\Projects\gangasterbot\gangasterbot\bin\Microsoft.PythonTools.AzureSetup.exe.config
+c:\users\vipaggar\documents\visual studio 2015\Projects\gangasterbot\gangasterbot\bin\wfastcgi.py
+c:\users\vipaggar\documents\visual studio 2015\Projects\gangasterbot\gangasterbot\obj\Release\deployment-updated-orig-prefix.txt
+c:\users\vipaggar\documents\visual studio 2015\Projects\gangasterbot\gangasterbot\ptvs_virtualenv_proxy.py
+c:\users\vipaggar\documents\visual studio 2015\Projects\gangasterbot\gangasterbot\obj\Release\web.config
+c:\users\vipaggar\documents\visual studio 2015\Projects\gangasterbot\gangasterbot\obj\Release\web.debug.config
