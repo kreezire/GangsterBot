@@ -57,6 +57,16 @@
     <Compile Include="gangasterbot\settings.py" />
     <Compile Include="gangasterbot\urls.py" />
     <Compile Include="gangasterbot\wsgi.py" />
+    <Compile Include="privacy\admin.py" />
+    <Compile Include="privacy\apps.py" />
+    <Compile Include="privacy\migrations\__init__.py" />
+    <Compile Include="privacy\models.py" />
+    <Compile Include="privacy\tests.py" />
+    <Compile Include="privacy\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="privacy\views.py" />
+    <Compile Include="privacy\__init__.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\" />
@@ -75,6 +85,9 @@
     <Folder Include="facebookMessenger\migrations\" />
     <Folder Include="facebookMessenger\templates\" />
     <Folder Include="gangasterbot\" />
+    <Folder Include="privacy\" />
+    <Folder Include="privacy\migrations\" />
+    <Folder Include="privacy\templates\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="gangsterweb - Web Deploy.pubxml" />
@@ -83,6 +96,7 @@
     <Content Include="facebookMessenger\chatterBotApi\LICENSE" />
     <Content Include="facebookMessenger\chatterBotApi\README.md" />
     <Content Include="facebookMessenger\templates\index.html" />
+    <Content Include="privacy\templates\index.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="app\static\app\content\bootstrap.css" />

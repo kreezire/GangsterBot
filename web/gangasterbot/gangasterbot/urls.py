@@ -16,6 +16,7 @@ import app.views
 
 urlpatterns = [
     # Examples:
+    url(r'^privacy/', include('privacy.urls')),
     url(r'^facebookmessenger/', include('facebookMessenger.urls')),
     url(r'^$', app.views.home, name='home'),
     url(r'^contact$', app.views.contact, name='contact'),
