@@ -38,6 +38,12 @@
     <Compile Include="app\migrations\__init__.py" />
     <Compile Include="facebookMessenger\admin.py" />
     <Compile Include="facebookMessenger\apps.py" />
+    <Compile Include="facebookMessenger\chatterBotApi\python\chatterbotapi.py" />
+    <Compile Include="facebookMessenger\chatterBotApi\python\chatterbotapitest.py" />
+    <Compile Include="facebookMessenger\chatterBotApi\python\__init__.py" />
+    <Compile Include="facebookMessenger\chatterBotApi\__init__.py" />
+    <Compile Include="facebookMessenger\gizoogleTranslateApi\GizoogleTranslator.py" />
+    <Compile Include="facebookMessenger\gizoogleTranslateApi\__init__.py" />
     <Compile Include="facebookMessenger\migrations\__init__.py" />
     <Compile Include="facebookMessenger\models.py" />
     <Compile Include="facebookMessenger\tests.py" />
@@ -63,6 +69,9 @@
     <Folder Include="app\templates\" />
     <Folder Include="app\templates\app\" />
     <Folder Include="facebookMessenger\" />
+    <Folder Include="facebookMessenger\chatterBotApi\" />
+    <Folder Include="facebookMessenger\chatterBotApi\python\" />
+    <Folder Include="facebookMessenger\gizoogleTranslateApi\" />
     <Folder Include="facebookMessenger\migrations\" />
     <Folder Include="facebookMessenger\templates\" />
     <Folder Include="gangasterbot\" />
@@ -70,6 +79,9 @@
   <ItemGroup>
     <None Include="gangsterweb - Web Deploy.pubxml" />
     <None Include="gangsterweb - FTP.pubxml" />
+    <Content Include="facebookMessenger\chatterBotApi\lgpl-3.0.txt" />
+    <Content Include="facebookMessenger\chatterBotApi\LICENSE" />
+    <Content Include="facebookMessenger\chatterBotApi\README.md" />
     <Content Include="facebookMessenger\templates\index.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />

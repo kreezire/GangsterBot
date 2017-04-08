@@ -3,11 +3,23 @@ import json
 import requests
 from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse
+
+#Chatter bot api and traslation api
+from chatterBotApi.python.chatterbotapi import ChatterBotFactory, ChatterBotType
+from gizoogleTranslateApi.GizoogleTranslator import GizoogleTranslator
+factory = ChatterBotFactory()
+
+#FB Messenger Page Token
 FB_MESSENGER_ACCESS_TOKEN = 'EAAGwyoQV2LUBAOdoDTeRQszgIXwih0DoZAh2Cr4sTXrvZBO8vDP4pvVabZCHFbZB1DyA3pidPmaPeq18enk6axVWoouLw2Ekd0ZAaJIBDzr0WVomkmZB0t2c7kMsp27jXdUlSiRTpHDDP6xnk1Cr6ZBQ742uEO03oT29ph8OnjsSgZDZD'
+
 def respond_FB(sender_id, text):
+    bot2 = factory.create(ChatterBotType.PANDORABOTS, 'b0dafd24ee35a477')
+    bot2session = bot2.create_session()
+    gizoogleTranslator = GizoogleTranslator()
+    botReply = bot2session.think(text)
     json_data = {
         "recipient": {"id": sender_id},
-        "message": {"text": text + " to you!"}
+        "message": {"text": gizoogleTranslator.translate(botReply)}
     }
     params = {
         "access_token": FB_MESSENGER_ACCESS_TOKEN
