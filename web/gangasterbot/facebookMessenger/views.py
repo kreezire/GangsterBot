@@ -1,14 +1,34 @@
 from django.shortcuts import render
 import json
-# Create your views here.
+import requests
+from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse
+FB_MESSENGER_ACCESS_TOKEN = 'EAAGwyoQV2LUBAOdoDTeRQszgIXwih0DoZAh2Cr4sTXrvZBO8vDP4pvVabZCHFbZB1DyA3pidPmaPeq18enk6axVWoouLw2Ekd0ZAaJIBDzr0WVomkmZB0t2c7kMsp27jXdUlSiRTpHDDP6xnk1Cr6ZBQ742uEO03oT29ph8OnjsSgZDZD'
+def respond_FB(sender_id, text):
+    json_data = {
+        "recipient": {"id": sender_id},
+        "message": {"text": text + " to you!"}
+    }
+    params = {
+        "access_token": FB_MESSENGER_ACCESS_TOKEN
+    }
+    r = requests.post('https://graph.facebook.com/v2.6/me/messages', json=json_data, params=params)
+    #print(r, r.status_code, r.text)
 
 
+@csrf_exempt
 def index(request):
     #print request
     #req=json.loads(request.body)
     if request.method == 'POST':
-        return
+        body = request.body
+        #print("BODY", body)
+        messaging_events = json.loads(body.decode("utf-8"))
+        #print("JSON BODY", body)
+        sender_id = messaging_events["entry"][0]["messaging"][0]["sender"]["id"]
+        message = messaging_events["entry"][0]["messaging"][0]["message"]["text"]
+        respond_FB(sender_id, message)
+        return HttpResponse('Received.')
     else:
         if request.GET.get('hub.verify_token') == 'make_me_an_offer_i_can_not_refuse':
             return HttpResponse(request.GET.get('hub.challenge'))
