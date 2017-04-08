@@ -26,7 +26,7 @@ SECRET_KEY = 'eb6edc8f-c56e-400a-9594-a6a735bb156f'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [u'gangsterweb.azurewebsites.net']
+ALLOWED_HOSTS = [u'gangsterweb.azurewebsites.net',u'localhost' ]
 
 
 # Application definition

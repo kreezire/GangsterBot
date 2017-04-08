@@ -3,7 +3,7 @@ Definition of urls for gangasterbot.
 """
 
 from datetime import datetime
-from django.conf.urls import url
+from django.conf.urls import include, url
 import django.contrib.auth.views
 
 import app.forms
@@ -16,6 +16,7 @@ import app.views
 
 urlpatterns = [
     # Examples:
+    url(r'^facebookmessenger/', include('facebookMessenger.urls')),
     url(r'^$', app.views.home, name='home'),
     url(r'^contact$', app.views.contact, name='contact'),
     url(r'^about', app.views.about, name='about'),

@@ -7,3 +7,12 @@ c:\users\vipaggar\documents\visual studio 2015\Projects\gangasterbot\gangasterbo
 c:\users\vipaggar\documents\visual studio 2015\Projects\gangasterbot\gangasterbot\ptvs_virtualenv_proxy.py
 c:\users\vipaggar\documents\visual studio 2015\Projects\gangasterbot\gangasterbot\obj\Release\web.config
 c:\users\vipaggar\documents\visual studio 2015\Projects\gangasterbot\gangasterbot\obj\Release\web.debug.config
+C:\Users\vipaggar\Documents\code\GangsterBot\web\gangasterbot\bin\Microsoft.PythonTools.WebRole.dll
+C:\Users\vipaggar\Documents\code\GangsterBot\web\gangasterbot\bin\AzureSetup.cfg
+C:\Users\vipaggar\Documents\code\GangsterBot\web\gangasterbot\bin\Microsoft.PythonTools.AzureSetup.exe
+C:\Users\vipaggar\Documents\code\GangsterBot\web\gangasterbot\bin\Microsoft.PythonTools.AzureSetup.exe.config
+C:\Users\vipaggar\Documents\code\GangsterBot\web\gangasterbot\bin\wfastcgi.py
+C:\Users\vipaggar\Documents\code\GangsterBot\web\gangasterbot\obj\Release\deployment-updated-orig-prefix.txt
+C:\Users\vipaggar\Documents\code\GangsterBot\web\gangasterbot\ptvs_virtualenv_proxy.py
+C:\Users\vipaggar\Documents\code\GangsterBot\web\gangasterbot\obj\Release\web.config
+C:\Users\vipaggar\Documents\code\GangsterBot\web\gangasterbot\obj\Release\web.debug.config

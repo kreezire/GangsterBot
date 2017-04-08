@@ -36,6 +36,16 @@
     <Compile Include="app\views.py" />
     <Compile Include="app\__init__.py" />
     <Compile Include="app\migrations\__init__.py" />
+    <Compile Include="facebookMessenger\admin.py" />
+    <Compile Include="facebookMessenger\apps.py" />
+    <Compile Include="facebookMessenger\migrations\__init__.py" />
+    <Compile Include="facebookMessenger\models.py" />
+    <Compile Include="facebookMessenger\tests.py" />
+    <Compile Include="facebookMessenger\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="facebookMessenger\views.py" />
+    <Compile Include="facebookMessenger\__init__.py" />
     <Compile Include="manage.py" />
     <Compile Include="gangasterbot\__init__.py" />
     <Compile Include="gangasterbot\settings.py" />
@@ -52,11 +62,15 @@
     <Folder Include="app\static\app\scripts\" />
     <Folder Include="app\templates\" />
     <Folder Include="app\templates\app\" />
+    <Folder Include="facebookMessenger\" />
+    <Folder Include="facebookMessenger\migrations\" />
+    <Folder Include="facebookMessenger\templates\" />
     <Folder Include="gangasterbot\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="gangsterweb - Web Deploy.pubxml" />
     <None Include="gangsterweb - FTP.pubxml" />
+    <Content Include="facebookMessenger\templates\index.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="app\static\app\content\bootstrap.css" />
