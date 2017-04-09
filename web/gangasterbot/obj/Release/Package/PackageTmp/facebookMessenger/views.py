@@ -39,14 +39,17 @@ def index(request):
     #print request
     #req=json.loads(request.body)
     if request.method == 'POST':
-        body = request.body
-        #print("BODY", body)
-        messaging_events = json.loads(body.decode("utf-8"))
-        #print("JSON BODY", body)
-        sender_id = messaging_events["entry"][0]["messaging"][0]["sender"]["id"]
-        message = messaging_events["entry"][0]["messaging"][0]["message"]["text"]
-        respond_FB(sender_id, message)
-        return HttpResponse('Received.')
+        try:
+            body = request.body
+            #print("BODY", body)
+            messaging_events = json.loads(body.decode("utf-8"))
+            #print("JSON BODY", body)
+            sender_id = messaging_events["entry"][0]["messaging"][0]["sender"]["id"]
+            message = messaging_events["entry"][0]["messaging"][0]["message"]["text"]
+            respond_FB(sender_id, message)
+            return HttpResponse('Received.')
+        except:
+            return HttpResponse('')
     else:
         if request.GET.get('hub.verify_token') == 'make_me_an_offer_i_can_not_refuse':
             return HttpResponse(request.GET.get('hub.challenge'))
