@@ -19,6 +19,7 @@ def respond_FB(sender_id, text):
     try:
         bot2 = factory.create(ChatterBotType.PANDORABOTS, 'b0dafd24ee35a477')
         bot2session = bot2.create_session()
+        bot2session.vars['custid']= "gangsterbot"+sender_id
         gizoogleTranslator = GizoogleTranslator()
         botReply = bot2session.think(text)
         json_data = {
