@@ -14,7 +14,8 @@ FB_MESSENGER_ACCESS_TOKEN = 'EAAGwyoQV2LUBAOdoDTeRQszgIXwih0DoZAh2Cr4sTXrvZBO8vD
 
 def changeNameInString(inputText):
     return inputText.replace("Chomsky", "Vito (a.k.a The Little Finger)")
-    
+def changeTextInOuput(inputText):
+    return inputText.replace("Noam Chomsky", "Vito Corleone")   
 def respond_FB(sender_id, text):
     try:
         bot2 = factory.create(ChatterBotType.PANDORABOTS, 'b0dafd24ee35a477')
@@ -24,7 +25,7 @@ def respond_FB(sender_id, text):
         botReply = bot2session.think(text)
         json_data = {
             "recipient": {"id": sender_id},
-            "message": {"text": changeNameInString(gizoogleTranslator.translate(botReply))}
+            "message": {"text": changeTextInOuput(changeNameInString(gizoogleTranslator.translate(botReply)))}
         }
     except:
         json_data = {
