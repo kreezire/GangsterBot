@@ -11,7 +11,7 @@ class GizoogleTranslator:
 		try:
 			response = requests.post("http://www.gizoogle.net/textilizer.php", data={'translatetext': inputText})
 		except:
-			return raiseException()
+			return inputText
 		translateInput = string.replace(response.text, 'height:250px;"/>', 'height:250px;">',1)
 		parsed_html = BeautifulSoup(translateInput, 'html.parser')
 		return parsed_html.body.find('textarea', attrs={'name':'translatetext'}).text
